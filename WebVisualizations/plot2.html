@@ -37,10 +37,10 @@
                 class="dropdown-menu active"
                 aria-labelledby="navbarDropdown"
               >
-                <a class="dropdown-item active" href="plot1.html"
+                <a class="dropdown-item" href="plot1.html"
                   >Latitude Vs. Max Temp</a
                 >
-                <a class="dropdown-item" href="plot2.html"
+                <a class="dropdown-item active" href="plot2.html"
                   >Latitude Vs. Humidity</a
                 >
                 <a class="dropdown-item" href="plot3.html"
@@ -65,27 +65,30 @@
 
     <div class="main_container">
       <div class="main_box round_corners">
-        <h1 class="box_header">Analysis: Latitude vs. Temperature</h1>
+        <h1 class="box_header">Analysis: Latitude vs. Humidity</h1>
         <hr />
-        <img src="visualizations/Fig1.png" class="main_plot" />
+        <img src="visualizations/Fig2.png" class="main_plot" />
         <div>
           <p>
-            In this plot we clearly see that the average temperature as plotted
-            against lattitude is colder in the far northern and southernly
-            regions and warmer near the Equator. We also notice that the average
-            temperature in the norther hemisphere is higher than that of the
-            southern hemisphere. This is expected and consistent with the date
-            of observation, which occurs in the late spring of the northern
-            hemisphere. I would expect that if we were to plot the mathematical
-            model of solar energy per square foot on a globe oriented 23.5
-            degrees from its axis of rotation, that we would see a curve that
-            almost perfectly matches this one.
+            The elephant in the room for this plot is that single outlier near
+            the equator This clearly must be an error as humidity can only ever
+            reach 100%.
           </p>
           <p>
-            The difference in temperature between day and night likely accounts
-            for some of the broadness of the line. Note that the broadness of
-            the figure is narrower deep in the southern hemisphere where there
-            is less landmass on opposite sides of the globe
+            Ignoring that we can still glean useful insights from the data. One
+            thing that I notice is that the northern hemisphere appears to be
+            much more arid than the southern. I briefly discussed on the main
+            page how the sampling method biased toward island and coastal
+            cities. I think that the large north american and eurasian
+            continents account for this discrepancy, as a random point picked in
+            the northern hemisphere is much more likely to fall on land than one
+            picked in the southern hemisphere. I suspect that humidity has much
+            more to do with a city's proximity to water than anything else. If
+            true, then finding inland cities is simply more likely given our
+            sampling method in the northern hemisphere. If I am mistaken about
+            this, then the data imply that the warmer seasons appear to have a
+            negative effect on the humidity, which I find non-intuitive, as I'd
+            expect solar radiation to vaporise water
           </p>
         </div>
       </div>
@@ -96,10 +99,10 @@
           </h1>
           <hr />
           <div class="grid_block">
-            <a class="active_plot" href="plot1.html">
+            <a href="plot1.html">
               <img src="visualizations/Fig1.png" />
             </a>
-            <a href="plot2.html">
+            <a class="active_plot" href="plot2.html">
               <img src="visualizations/Fig2.png" />
             </a>
             <a href="plot3.html">

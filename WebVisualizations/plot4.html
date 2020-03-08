@@ -37,7 +37,7 @@
                 class="dropdown-menu active"
                 aria-labelledby="navbarDropdown"
               >
-                <a class="dropdown-item active" href="plot1.html"
+                <a class="dropdown-item" href="plot1.html"
                   >Latitude Vs. Max Temp</a
                 >
                 <a class="dropdown-item" href="plot2.html"
@@ -46,7 +46,7 @@
                 <a class="dropdown-item" href="plot3.html"
                   >Latitude Vs. Cloudiness</a
                 >
-                <a class="dropdown-item" href="plot4.html"
+                <a class="dropdown-item active" href="plot4.html"
                   >Latitude Vs. Windspeed</a
                 >
               </div>
@@ -65,27 +65,23 @@
 
     <div class="main_container">
       <div class="main_box round_corners">
-        <h1 class="box_header">Analysis: Latitude vs. Temperature</h1>
+        <h1 class="box_header">Analysis: Latitude vs. Wind Speed</h1>
         <hr />
-        <img src="visualizations/Fig1.png" class="main_plot" />
+        <img src="visualizations/Fig4.png" class="main_plot" />
         <div>
           <p>
-            In this plot we clearly see that the average temperature as plotted
-            against lattitude is colder in the far northern and southernly
-            regions and warmer near the Equator. We also notice that the average
-            temperature in the norther hemisphere is higher than that of the
-            southern hemisphere. This is expected and consistent with the date
-            of observation, which occurs in the late spring of the northern
-            hemisphere. I would expect that if we were to plot the mathematical
-            model of solar energy per square foot on a globe oriented 23.5
-            degrees from its axis of rotation, that we would see a curve that
-            almost perfectly matches this one.
+            This data set looks pretty random to me if we just look at
+            windspeeds below 20 mph. Which probably speaks to humans having a
+            tendency to build cities in places that are not excessively windy to
+            begin with. We can say that windspeeds look to be considerably
+            higher in the deep global south, which I suppose makes sense. If
+            winds tend to be oriented east-west, then we'd expect it to speed up
+            near the poles.
           </p>
           <p>
-            The difference in temperature between day and night likely accounts
-            for some of the broadness of the line. Note that the broadness of
-            the figure is narrower deep in the southern hemisphere where there
-            is less landmass on opposite sides of the globe
+            There are also a number of outliers in the northern hemisphere. I
+            suppose that it's possible that wind speeds correlate positively
+            with warmer temperatures, but the data don't make it obvious here.
           </p>
         </div>
       </div>
@@ -96,7 +92,7 @@
           </h1>
           <hr />
           <div class="grid_block">
-            <a class="active_plot" href="plot1.html">
+            <a href="plot1.html">
               <img src="visualizations/Fig1.png" />
             </a>
             <a href="plot2.html">
@@ -105,7 +101,7 @@
             <a href="plot3.html">
               <img src="visualizations/Fig3.png" />
             </a>
-            <a href="plot4.html">
+            <a class="active_plot" href="plot4.html">
               <img src="visualizations/Fig4.png" />
             </a>
           </div>

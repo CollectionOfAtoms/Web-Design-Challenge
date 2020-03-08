@@ -37,13 +37,13 @@
                 class="dropdown-menu active"
                 aria-labelledby="navbarDropdown"
               >
-                <a class="dropdown-item active" href="plot1.html"
+                <a class="dropdown-item" href="plot1.html"
                   >Latitude Vs. Max Temp</a
                 >
                 <a class="dropdown-item" href="plot2.html"
                   >Latitude Vs. Humidity</a
                 >
-                <a class="dropdown-item" href="plot3.html"
+                <a class="dropdown-item active" href="plot3.html"
                   >Latitude Vs. Cloudiness</a
                 >
                 <a class="dropdown-item" href="plot4.html"
@@ -65,27 +65,24 @@
 
     <div class="main_container">
       <div class="main_box round_corners">
-        <h1 class="box_header">Analysis: Latitude vs. Temperature</h1>
+        <h1 class="box_header">Analysis: Latitude vs. Cloudiness</h1>
         <hr />
-        <img src="visualizations/Fig1.png" class="main_plot" />
+        <img src="visualizations/Fig3.png" class="main_plot" />
         <div>
           <p>
-            In this plot we clearly see that the average temperature as plotted
-            against lattitude is colder in the far northern and southernly
-            regions and warmer near the Equator. We also notice that the average
-            temperature in the norther hemisphere is higher than that of the
-            southern hemisphere. This is expected and consistent with the date
-            of observation, which occurs in the late spring of the northern
-            hemisphere. I would expect that if we were to plot the mathematical
-            model of solar energy per square foot on a globe oriented 23.5
-            degrees from its axis of rotation, that we would see a curve that
-            almost perfectly matches this one.
+            At a glance this data looks to be fairly randomly distributed.
+            Indicating clouds tend to be uniformly distributed across the globe.
+            However, the one notably present structure is the presence of
+            horizontal lines at 0%, 20%, 75% and 90%.
           </p>
           <p>
-            The difference in temperature between day and night likely accounts
-            for some of the broadness of the line. Note that the broadness of
-            the figure is narrower deep in the southern hemisphere where there
-            is less landmass on opposite sides of the globe
+            I suspect that this means that Cloudiness just has a wishy-washy
+            definition and tends to take on values that humans find pleasing,
+            and likely takes on values divisible by 5 because humans usually
+            have 10 fingers. This is made to be consumed by humans after all.
+            Note that there is no such horizontal line at 100%, because that
+            would indicate a statement of absolute truth, and therefore should
+            be avoided by those publishing data for the public at all costs.
           </p>
         </div>
       </div>
@@ -96,13 +93,13 @@
           </h1>
           <hr />
           <div class="grid_block">
-            <a class="active_plot" href="plot1.html">
+            <a href="plot1.html">
               <img src="visualizations/Fig1.png" />
             </a>
             <a href="plot2.html">
               <img src="visualizations/Fig2.png" />
             </a>
-            <a href="plot3.html">
+            <a class="active_plot" href="plot3.html">
               <img src="visualizations/Fig3.png" />
             </a>
             <a href="plot4.html">
