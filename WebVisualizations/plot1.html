@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cities Visualization : Plot 1</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="resources/styles.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="landing_page.html">Latitude</a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown active">
+              <div
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Plots
+              </div>
+              <div
+                class="dropdown-menu active"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item active" href="plot1.html"
+                  >Latitude Vs. Max Temp</a
+                >
+                <a class="dropdown-item" href="plot2.html"
+                  >Latitude Vs. Humidity</a
+                >
+                <a class="dropdown-item" href="plot3.html"
+                  >Latitude Vs. Cloudiness</a
+                >
+                <a class="dropdown-item" href="plot4.html"
+                  >Latitude Vs. Windspeed</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Content -->
+
+    <div class="main_container">
+      <div class="main_box round_corners">
+        <h1 class="box_header">Analysis: Temperature</h1>
+        <hr />
+        <img src="visualizations/Fig1.png" class="main_plot" />
+        <div>
+          In this plot we clearly see that the average temperature as plotted
+          against lattitude is colder in the far northern and southernly regions
+          and warmer near the Equator. We also notice that the average
+          temperature in the norther hemisphere is higher than that of the
+          southern hemisphere. This is expected and consistent with the date of
+          observation, which occurs in the late spring of the northern
+          hemisphere. I would expect that if we were to plot the mathematical
+          model of solar energy per square foot on a globe oriented 23.5 degrees
+          from its axis of rotation, that we would see a curve that almost
+          perfectly matches this one.
+        </div>
+      </div>
+      <div class="secondary_box">
+        <div class="secondary_contents round_corners">
+          <h1>
+            Data Visualizations
+          </h1>
+          <hr />
+          <div class="grid_block">
+            <a class="active_plot" href="plot1.html">
+              <img src="visualizations/Fig1.png" />
+            </a>
+            <a href="plot2.html">
+              <img src="visualizations/Fig2.png" />
+            </a>
+            <a href="plot3.html">
+              <img src="visualizations/Fig3.png" />
+            </a>
+            <a hfref="plot4.html">
+              <img src="visualizations/Fig4.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap scripts for dropdowns -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

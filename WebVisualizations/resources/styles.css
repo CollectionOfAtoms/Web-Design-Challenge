@@ -1,0 +1,81 @@
+body {
+  background: #aaa583;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.vis_box {
+  flex-flow: column;
+}
+
+img {
+  max-width: 100%;
+  min-width: 50%;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.main_container {
+  min-height: 90vh;
+  width: 100%;
+  font-size: 14pt;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.round_corners {
+  border-radius: 1rem;
+}
+
+.main_box {
+  max-width: 60%;
+  max-height: 100%;
+  min-height: 70%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.main_box_img {
+  float: left;
+}
+
+.grid_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.secondary_box {
+  flex-direction: column;
+}
+
+.secondary_contents {
+  height: auto;
+  max-height: 65vh;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.active_plot {
+  border: darkslategrey;
+  border-style: dotted;
+  border-width: 2pt;
+}
+
+.main_plot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
